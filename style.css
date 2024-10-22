@@ -1,0 +1,125 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(147, 147, 190);
+  background: linear-gradient(
+    90deg,
+    rgba(147, 147, 190, 1) 37%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.container {
+  max-width: 480px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+.list {
+  list-style: none;
+  padding: 20px;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 60px;
+  color: rgb(195, 34, 183);
+  background: linear-gradient(
+    0deg,
+    rgba(195, 34, 183, 1) 0%,
+    rgba(253, 118, 45, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-content {
+  display: flex;
+  justify-content: center;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(255, 0, 254);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 254, 1) 0%,
+    rgba(237, 78, 78, 1) 71%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.input {
+  border-radius: 10px 0 0 10px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 94%
+  );
+  color: white;
+  border-right: 1px solid red;
+}
+.input::placeholder {
+  color: white;
+}
+.span {
+  margin-left: 10px;
+}
+li {
+  padding: 10px 20px;
+  background-color: antiquewhite;
+  margin: 10px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.comleteTask {
+  cursor: pointer;
+}
+.deleteTask {
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+.add-btn {
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background: rgb(252, 176, 69);
+  background: linear-gradient(
+    90deg,
+    rgba(252, 176, 69, 1) 6%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(131, 58, 180, 1) 100%
+  );
+  padding: 5px 10px;
+  font-size: 15px;
+  font-family: "Montserrat";
+  cursor: pointer;
+  color: white;
+}
