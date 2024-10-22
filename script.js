@@ -29,8 +29,4 @@ taskList.addEventListener("click", (e) => {
     const task = e.target.nextElementSibling;
     task.style.textDecoration = e.target.checked ? "line-trought" : "none";
   }
-  if (e.target.checked) {
-    const task = e.target.nextElementSibling;
-    task.style.backgroundColor = "green";
-  }
 });
